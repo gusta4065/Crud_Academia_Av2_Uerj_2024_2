@@ -1,50 +1,88 @@
-# Welcome to your Expo app 👋
+# Relatório de Experiência: Desenvolvimento de Aplicativo CRUD para Lista de Exercícios de Musculação
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 1. Introdução
 
-## Get started
+O presente relatório tem como objetivo descrever o desenvolvimento de um aplicativo CRUD para gerenciamento de exercícios de musculação. O projeto foi desenvolvido como parte da disciplina de **Desenvolvimento de Sistemas** no curso de Ciência da Computação, utilizando as tecnologias React Native e AsyncStorage.
 
-1. Install dependencies
+Este relatório segue as normas da ABNT, estruturando o trabalho em introdução, metodologia, resultados e conclusão.
 
-   ```bash
-   npm install
-   ```
+## 2. Objetivos
 
-2. Start the app
+### 2.1 Objetivo Geral
 
-   ```bash
-    npx expo start
-   ```
+Desenvolver um aplicativo funcional que permita:
+- Cadastrar, listar, editar e excluir exercícios de musculação.
+- Gerenciar informações como número de séries, repetições e nome do exercício.
 
-In the output, you'll find options to open the app in a
+### 2.2 Objetivos Específicos
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- Implementar funcionalidades de armazenamento utilizando **AsyncStorage**.
+- Aplicar boas práticas de programação com **React Native**.
+- Proporcionar uma interface simples e intuitiva para o usuário.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 3. Metodologia
 
-## Get a fresh project
+### 3.1 Tecnologias Utilizadas
 
-When you're ready, run:
+As tecnologias e ferramentas empregadas foram:
+- **Linguagem de programação**: JavaScript/TypeScript.
+- **Framework**: React Native.
+- **Gerenciamento de dados**: AsyncStorage.
+- **Editor de código**: Visual Studio Code.
 
-```bash
-npm run reset-project
-```
+### 3.2 Estrutura do Projeto
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+O projeto foi estruturado em componentes para facilitar a organização e manutenção do código:
+- **Componente principal**: Gerencia as rotas do aplicativo e controla a navegação.
+- **Componente de lista**: Exibe a lista de exercícios.
+- **Componente de formulário**: Permite o cadastro e edição dos exercícios.
 
-## Learn more
+### 3.3 Desenvolvimento
 
-To learn more about developing your project with Expo, look at the following resources:
+As etapas do desenvolvimento foram:
+1. Configuração do ambiente de desenvolvimento.
+2. Criação dos componentes básicos.
+3. Implementação das funcionalidades de CRUD:
+   - **Create**: Cadastro de novos exercícios.
+   - **Read**: Listagem dos exercícios cadastrados.
+   - **Update**: Edição dos exercícios existentes.
+   - **Delete**: Exclusão de exercícios.
+4. Testes e validação do funcionamento.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 4. Resultados
 
-## Join the community
+### 4.1 Funcionalidades Implementadas
 
-Join our community of developers creating universal apps.
+O aplicativo permite:
+- Adicionar novos exercícios com os campos:
+  - Nome.
+  - Séries.
+  - Repetições.
+- Visualizar a lista de exercícios cadastrados.
+- Editar as informações de exercícios existentes.
+- Excluir exercícios da lista.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 4.2 Exemplos de Uso
+
+#### Cadastro de um Exercício
+O usuário pode inserir o nome do exercício, o número de séries e repetições. Após salvar, o exercício é exibido na lista principal.
+
+#### Edição de um Exercício
+Ao selecionar um exercício, o usuário pode alterar suas informações e salvar as mudanças.
+
+## 5. Conclusão
+
+O desenvolvimento do aplicativo CRUD para gerenciamento de exercícios de musculação foi concluído com sucesso, alcançando os objetivos propostos. A experiência proporcionou:
+- Compreensão prática do uso do **AsyncStorage** para persistência de dados.
+- Aplicação de conceitos fundamentais do desenvolvimento mobile com **React Native**.
+- Criação de uma interface funcional e responsiva.
+
+O aplicativo é um ponto de partida para projetos mais complexos no futuro, podendo ser ampliado com funcionalidades como autenticação de usuários e integração com bancos de dados remotos.
+
+---
+
+## Referências
+
+- ABNT. **NBR 6023: Informação e documentação - Referências - Elaboração.** Rio de Janeiro: ABNT, 2018.
+- React Native. [Documentação oficial](https://reactnative.dev/).
+- AsyncStorage. [Documentação oficial](https://react-native-async-storage.github.io/async-storage/).
